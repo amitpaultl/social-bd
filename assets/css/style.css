@@ -1,0 +1,1022 @@
+/*
+-------------------------------------------------
+  Theme Name: BD social HTML5 Responsive Template
+  Theme URL: bdsocial.com
+  Author: bdcoder
+  Author URL: bdcoder.com
+  Creation Date: 09-09-2024
+  Description:A default stylesheets for BD-Social HTML5 Responsive Template
+  Version: 1.00
+
+
+  ---------------------------------------------------
+  Developed By: Amit kumar paul
+  Developer URL: https://www.linkedin.com/in/amit-kumar-paul-p1/
+  Email: amitpaultl@gmail.com
+  From: Bangladesh
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1.General CSS
+  2.Preloader Area Start 
+  3.Typography CSS
+  4.Button CSS
+  5.Navbar CSS
+  6.Header Area
+  7.service Area
+
+------------------------------------------------ */
+
+
+/*-----------------------------------------------
+            1. General Style start
+-------------------------------------------------*/
+
+
+
+
+:root{
+	--color-1:#073333;
+	--color-2:#fff;
+	--color-3:#000;
+	--color-4:#0a2960;
+	--color-5:#f3f4f4;
+	--color-6:#dee1e1;;
+	--color-8:#20303c;
+	--color-9:#2f5454;
+	--color-10:#026661;
+	--color-11:#ffffff29;
+	--color-12: #067c7c;
+
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+}
+
+
+body {
+	font-family: ARIAL;
+	font-size: 14px;
+	line-height:1.7em;
+	-webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+	text-decoration:none !important;
+	cursor:pointer;
+	font-weight: bold;
+    color: unset;
+}
+
+a:hover,a:focus,a:visited{
+	text-decoration:none !important;
+	outline:none !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	position:relative;
+	margin:0px;
+	background:none;
+}
+
+p{
+	font-size:13px;
+	line-height:1.7em;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/*-----------------------------------------------
+            1. General Style end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        2    preloaderInner area start
+-------------------------------------------------*/
+
+#preloader {
+    background-color: var(--color-2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    display: none;
+}
+
+#preloaderInner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*-----------------------------------------------
+        2    preloaderInner area end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        3    Typography area start
+-------------------------------------------------*/
+
+    /* text color */
+
+    .black-color{
+        color: var(--color-3);
+    }
+
+    .white-text{
+        color: var(--color-2);
+    }
+    
+    .theme-color{
+        color:var(--color-1) ;
+    }
+
+    /* bg color */
+
+    .bg-white{
+        background:var(--color-2) ;
+    }
+    .bg-social-theme{
+        background:var(--color-1) ;
+    }
+    .bg-social-black{
+        background:var(--color-3) ;
+    }
+
+    /* border color*/
+
+    .border-white{
+        border: 1px solid var(--color-2);
+    }
+
+    .border-theme{
+        border: 1px solid var(--color-1) !important;
+    }
+
+
+
+    /* margin */
+
+    .mt-99{
+        margin-top: 99px;
+    }
+
+    /* padding */
+    .py-50{
+        padding: 50px 0 20px;
+    }
+
+    .py-100{
+        padding: 100px 0;
+    }
+
+    /* bold */
+    .text-800{
+        font-weight: 800;
+    }
+
+    /* font  */
+    .font-16{
+        font-size: 16px;
+    }
+
+    /* focus */
+    .focus-noun:focus{
+        outline: none;
+        border: none;
+        box-shadow:none;
+    }
+
+    /* hight */
+    .h-95{
+        height: 95px;
+    }
+    
+
+/*-----------------------------------------------
+        3    Typography area end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        4   button area start
+-------------------------------------------------*/
+
+    .theme-btu{
+        font-size: 14px;
+        padding: 12px 35px;
+        transition: 0.3s;
+        background:var(--color-2) ;
+        border: none;
+        text-decoration: none;
+        outline: none;
+        color: var(--color-3);
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .theme-btu-hover:hover{
+        background: var(--color-12);
+        color: var(--color-2);
+    }
+
+    .outline-btu{
+        font-size: 14px;
+        padding: 12px 35px;
+        background: unset;
+        transition: 0.3s;
+        border: none;
+        text-decoration: none;
+        outline: none;
+        color: var(--color-2);
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border: 1px solid var(--color-2);
+    }
+
+    .outline-btu-hover:hover{
+        color: var(--color-3);
+        background: var(--color-2);
+    }
+
+    /* .theme-btu-hover:hover {
+        background: var(--color-12);
+    } */
+
+/*-----------------------------------------------
+        4   button area end
+-------------------------------------------------*/
+
+/*-----------------------------------------------
+        5   Navbar CSS area start
+-------------------------------------------------*/
+
+.header-area {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-11);
+}
+
+.bd-social-logo img {
+    width: 135px;
+    height: auto;
+}
+
+.bd-social-nav-maintop a {
+    font-size: 16px;
+    line-height: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 0 17px;
+    color: var(--color-2);
+    position: relative;
+    transition: .3s;
+    padding: 7px 0 !important;
+}
+
+.bd-social-nav-maintop a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: var(--color-2);
+    content: '';
+    height: 2px;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: 0.3s
+}
+
+.bd-social-nav-maintop a:hover:after {
+    visibility: visible;
+    width:100%;
+}
+
+.bd-social-nav-maintop a.active{
+    color: var(--color-2) !important;
+}
+
+.bd-social-nav-maintop a:hover{
+    color: var(--color-2) !important;
+}
+
+.bd-social-nav-maintop a.active:after  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-2);
+    content: '';
+    height: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    visibility: visible;
+}
+
+.collapse-button {
+    color: var(--color-2);
+    font-size: 23px;
+    padding: 10px;
+}
+
+/*-----------------------------------------------
+        5   Navbar CSS area end
+-------------------------------------------------*/
+
+/*-----------------------------------------------
+        6   Header Area CSS area start
+-------------------------------------------------*/
+
+.banner-area {
+    padding: 120px 0;
+    background-image: url('../images/Ellipse\ 3.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 1100px;
+}
+
+.bg-social-banner-img {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-social-banner-img .banner-main {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bg-social-banner-img .banner-main-1 {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 3;
+}
+
+.bg-social-banner-img .banner-main-2 {
+    max-width: 230px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    z-index: 3;
+}
+
+.bd-social-title {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.bd-text {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*-----------------------------------------------
+        6   Header Area CSS area end
+-------------------------------------------------*/
+
+/*-----------------------------------------------
+        7   service  Area CSS area start
+-------------------------------------------------*/
+.bd-service-social-area {
+    position: relative;
+    z-index: 1;
+}
+
+.bd-service-social-area {
+    background: #114b43;
+}
+
+.bd-social-service {
+    padding:  21px;
+    background: var(--color-9);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    height: 276px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.bd-social-service-title {
+    margin: 20px 0 15px;
+    font-size: 27px;
+
+}
+
+.bd-social-service-icon svg {
+    font-size: 17px;
+    background: var(--color-2);
+    border-radius: 50%;
+    padding: 9px;
+    color: var(--color-10);
+}
+
+
+.bd-social-social-btu {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-2);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+.bd-social-social-btu:hover {
+    color: var(--color-3);
+    font-weight: 600;
+}
+
+.bd-social-service-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    line-height: 1.5;
+}
+
+.bd-service-over-bg {
+    height: 100%;
+    position: relative;
+    z-index: 1111;
+}
+
+.bd-social-service:after {
+    position: absolute;
+    top: -14px;
+    width: 37%;
+    height: 37%;
+    background: var(--color-12);
+    content: '';
+    left: -14px;
+    border-radius: 67%;
+    transition: 1.3s;
+}
+
+.bd-social-service:hover:after {
+    width: 154%;
+    height: 154%;
+    top: -134px;
+    left: -147px;
+}
+
+/*-----------------------------------------------
+        7   service  Area CSS area end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        8   support  Area CSS area star
+-------------------------------------------------*/
+
+.bg-img-weighed{
+    background-image: url(../images/Ellipse\ 3.png);
+    background-size: 1331px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.support-area {
+    background: #0e6055;
+}
+
+.bd-social-support{
+    position: relative;
+    padding: 79px 0;
+    z-index: 2;
+}
+
+
+
+/* ---------------------------- */
+
+.support-title {
+    font-size: 12px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.support-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--color-12);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.support-icon svg {
+    font-size: 39px;
+    color: var(--color-2);
+}
+
+.bd-support-feature {
+    display: inline-block;
+    margin-bottom: 21px;
+    text-align: end;
+}
+
+
+.single-social img {
+    width: 70px;
+}
+
+.single-social {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: var(--color-2);
+}
+
+.single-social svg {
+    font-size: 70px;
+}
+
+.bd-social-support-icon-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------------------
+        8   support  Area CSS area end
+-------------------------------------------------*/
+
+/*-----------------------------------------------
+        9   blog  Area CSS area end
+-------------------------------------------------*/
+
+.bd-social-blog {
+    background: var(--color-11);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.bd-social-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+
+.bd-social-blog-title {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--color-2);
+}
+
+.bd-social-blog-desc {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    line-height: 1.5;
+    color: var(--color-2);
+}
+
+.bd-social-time-post {
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    color: var(--color-2);
+    font-size: 12px;
+}
+
+.bd-social-view {
+    display: flex;
+    gap: 30px;
+}
+
+.bd-social-blog:hover .bd-social-img img {
+    transform: scale(130%);
+}
+
+.bd-social-img {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+
+/*-----------------------------------------------
+        9  blog  Area CSS area end
+-------------------------------------------------*/
+
+/*-----------------------------------------------
+        9  about page Area CSS area start
+-------------------------------------------------*/
+
+.bd-page-banner{
+    background-image: url('../images/about-us-page-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+.bd-page-banner:after {
+    position: absolute;
+    z-index: -1;
+    background: #0a0d148a;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.page-panner-title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.bd-about-area{
+    padding: 100px 0;
+}
+
+.bd-social-about-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.bd-social-info-our {
+    margin-bottom: 30px;
+}
+
+
+.bd-social-question {
+    border: none;
+    background: var(--color-1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bd-social-question-title button {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 20px;
+    color: var(--color-2) !important;
+    font-weight: 600;
+}
+
+.bd-social-question-title {
+    border: none;
+    outline: none;
+}
+
+.bd-social-question-title button:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.bd-social-question-body {
+    font-size: 14px;
+    color: var(--color-2);
+}
+
+.minus-bd {
+    display: block;
+}
+
+.plus-bd {
+    display: none;
+}
+
+.icon-button-faq.collapsed .minus-bd {
+    display: none;
+}
+.icon-button-faq.collapsed .plus-bd {
+    display: block;
+}
+
+ .bd-social-question-title button:after {
+
+    display: none;
+}
+
+.bd-social-question-title .accordion-button:not(.collapsed)::after {
+    display: none;
+}
+
+.bd-social-faq-banner-area {
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--color-1);
+}
+
+
+
+/* contact us */
+
+.bd-social-contact-us {
+    background: #ebf9eb;
+    padding: 35px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.bd-social-contact-icon svg {
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+
+.bd-second-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.bd-social-control-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.bd-social-control-form input,.bd-social-control-form textarea {
+    position: relative;
+    outline: 0;
+    background: var(--color-1);
+    padding: 13px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    border: 1px solid var(--color-2);
+    width: 100%;
+    font-size: 14px;
+    color: var(--color-2);
+}
+
+.bd-social-control-form label {
+    position: absolute;
+    left: 21px;
+    top: 14px;
+    transition: all 0.3s ease;
+    color: var(--color-2);
+    font-size: 14px;
+}
+
+.bd-social-control-form input:focus ~ label,
+.bd-social-control-form input:valid ~ label {
+    font-size: 12px;
+    top: -12px;
+    background: var(--color-1);
+    padding: 0 8px;
+}
+
+.bd-social-control-form textarea:focus ~ label,
+.bd-social-control-form textarea:valid ~ label {
+    font-size: 12px;
+    top: -12px;
+    background: var(--color-1);
+    padding: 0 8px;
+}
+
+.bd-social-text-area{
+    height: 183px;
+}
+
+/* contact us */
+
+/*-----------------------------------------------
+        9  about page  Area CSS area end
+-------------------------------------------------*/
+/*-----------------------------------------------
+        9  single blog page  Area CSS area end
+-------------------------------------------------*/
+
+.blog-post-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-post-date svg {
+    font-size: 18px;
+}
+
+.blog-post-date p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.blog-post-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post-img {
+    margin-bottom: 27px;
+}
+
+.bd-blog-post-text {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.bd-short-list-blog-Ab li {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 6px;
+}
+
+.bd-search-blog-area {
+    border: 1px solid var(--color-2);
+    border-radius: 27px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin-bottom: 30px;
+}
+
+.bd-search-blog-area input {
+    padding: 10px 17px;
+    background: none;
+    color: var(--color-2);
+    width: 100%;
+}
+
+.search-button {
+    font-size: 15px;
+    background: var(--color-9);
+    padding: 0 18px;
+    border-radius: 25px;
+    color: var(--color-2);
+}
+
+.bd-short-blog {
+    margin-top: 44px;
+}
+
+.single-short-blog-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 11px;
+    border-bottom: 2px solid var(--color-2);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.bd-single-short-img {
+    height: 75px;
+}
+
+.bd-single-short-img img {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.single-bd-short-info-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow : hidden;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bd-short-info-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+
+
+/*-----------------------------------------------
+        9  single blog page  Area CSS area end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        9  terms blog page  Area CSS area start
+-------------------------------------------------*/
+
+.bd-social-terms-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.bd-social-terms-desc {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/*-----------------------------------------------
+        9  terms blog page  Area CSS area end
+-------------------------------------------------*/
+
+
+/*-----------------------------------------------
+        8   footer  Area CSS area start
+-------------------------------------------------*/
+
+.footer-logo {
+    max-width: 200px;
+}
+
+.bd-social-single-box{
+    margin-top: 30px;
+}
+
+.bd-title-footer {
+    font-size: 19px;
+    margin-bottom: 20px;
+
+}
+
+.bd-social-footer {
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: block;
+    transition: .3s;
+}
+
+.bd-social-footer:hover {
+    margin-left: 11px;
+}
+
+.bd-social-copyright {
+    color: var(--color-2);
+    font-size: 12px;
+}
+
+.bd-social-border-footer {
+    border-top: 1px solid var(--color-2);
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-top: 25px;
+}
+
+/*-----------------------------------------------
+        8   footer  Area CSS area end
+-------------------------------------------------*/

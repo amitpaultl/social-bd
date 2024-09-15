@@ -1,0 +1,51 @@
+/*  */
+@media (min-width: 78px) and (max-width: 535.98px) { 
+    .bd-bg-support::after {
+        height: 300px;
+        width: 300px;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
+    .h-95 {
+        height: 60px;
+    }
+
+    .bd-support-feature.support-2 {
+        left: 30px;
+    }
+
+    .bd-support-feature.support-1 {
+        right: 30px;
+    }
+
+    .bd-support-feature.support-3 {
+        right: 110px;
+        top: -30px;
+    }
+
+    .bd-support-feature.support-4 {
+        left: 110px;
+        top: -30px;
+    }
+
+    .bd-support-feature.support-7 {
+        right: 20px;
+        bottom: -65px;
+    }
+
+    .bd-support-feature.support-8 {
+        left: 25px;
+        bottom: -65px;
+    }
+
+    .bd-support-feature.support-5 {
+        right: 96px;
+        top: 24px;
+    }
+
+    .bd-support-feature.support-6 {
+        left: 105px;
+        top: 23px;
+    }
+
+ }
