@@ -486,19 +486,19 @@ img{
 
 .bd-social-service:after {
     position: absolute;
-    top: -14px;
-    width: 37%;
-    height: 37%;
+    top: -20px;
+    width: 100px;
+    height: 100px;
     background: var(--color-12);
     content: '';
-    left: -14px;
+    left: -20px;
     border-radius: 67%;
     transition: 1.3s;
 }
 
 .bd-social-service:hover:after {
-    width: 154%;
-    height: 154%;
+    width: 266%;
+    height: 249%;
     top: -134px;
     left: -147px;
 }
