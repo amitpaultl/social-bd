@@ -18,3 +18,40 @@
 
 
  }
+@media (min-width: 78px) and (max-width: 575.98px) { 
+    .bd-social-sing-up, .bd-social-sing-in {
+        transform: rotate(0);
+    }
+
+    .bd-social-sing-up{
+        left: auto;
+        margin-left: unset;
+    }
+
+    .bd-social-sing-in {
+        right: auto;
+        margin-right: 0;
+    }
+
+    .sing-up-area {
+        padding: 50px 0;
+    }
+
+    .bd-social-sing-up {
+        top: 50px;
+    }
+    .bd-social-sing-in {
+        top: 50px;
+    }
+
+    .bd-social-sing-from {
+        height: 593px;
+    }
+
+    .intro-login-social,.intro-sing-in-social{
+        animation-duration: 0;
+        animation-name: none;
+    }
+
+
+ }

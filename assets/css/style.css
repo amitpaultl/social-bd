@@ -66,6 +66,7 @@ body {
 	line-height:1.7em;
 	-webkit-font-smoothing: antialiased;
     font-family: "Inter", sans-serif;
+    background:var(--color-1) ;
 }
 
 a{
@@ -219,6 +220,12 @@ img{
     .h-95{
         height: 95px;
     }
+
+    .h-vh{
+        height: 100vh;
+    }
+
+
     
 
 /*-----------------------------------------------
@@ -1020,5 +1027,167 @@ img{
 /*-----------------------------------------------
         8   footer  Area CSS area end
 -------------------------------------------------*/
+/*-----------------------------------------------
+        8   login  Area CSS area start
+-------------------------------------------------*/
+
+.sing-up-area{
+    padding: 190px 0;
+    background-image: url('../images/Ellipse\ 3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    overflow: scroll;
+}
+
+.bd-social-sing-from {
+    border: 1px solid var(--color-2);
+    padding: 15px 27px;
+    background: var(--color-1);
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.bd-social-tab-login {
+    background: none;
+    color: var(--color-5);
+}
+
+    /* animation css */
+
+
+@keyframes animation-bd-2 {
+    0%   { left:50%;}
+    50%  { left:0;}
+    100% { left:50%; }
+}
+
+.bd-social-sing-up {
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    margin-left: -250px;
+    z-index: 2;
+    max-width: 500px;
+
+}
+
+@keyframes animation-bd-1 {
+    0%   { right:50%; }
+    50%  { right:0; }
+    100% { right:50%;}
+}
+
+.bd-social-sing-in {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    top: 90px;
+    margin-right: -250px;
+    transform: rotate(7deg);
+    z-index: 1;
+    max-width: 500px;
+}
+
+.intro-login-social{
+    animation-name: animation-bd-1;
+    animation-duration: 2s;
+    transform: rotate(0deg);
+}
+
+
+.intro-sing-in-social{
+    animation-name: animation-bd-2;
+    animation-duration: 2s;
+    transform: rotate(0deg);
+}
+
+.intro-login-rotate{
+    transform: rotate(7deg);
+}
+
+.z-index-part{
+    z-index: 4;
+}
+
+
+
+.bd-social-check {
+	position: relative;
+}
+.bd-social-check input[type="checkbox"] + label {
+	padding-left: 17px;
+  display: inline-block;
+  margin-bottom: 17px;
+}
+.bd-social-check input[type="checkbox"] + label::before {
+	border-color: var(--color-2);
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
+	content: "";
+	cursor: pointer;
+	display: inline-block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	transition: 0.3s linear all;
+	width: 20px;
+    border-radius: 5px;
+}
+.bd-social-check input[type="checkbox"] + label::before {
+	border-color: var(--color-9);
+	background-color: var(--color-9);
+	transform: scale(1);
+}
+.bd-social-check input[type="checkbox"]:checked + label::before {
+	border-color: var(--color-2);
+	border-style: dotted;
+	transition: 0.3s linear all;
+}
+.bd-social-check input[type="checkbox"]:checked + label::before {
+	background-color: var(--color-2);
+	border-style: solid;
+	transform: scale(1.2);
+	border-color: var(--color-2);
+}
+.bd-social-check input[type="checkbox"]:checked + label::after {
+	transform: scale(1);
+	opacity: 1;
+}
+.bd-social-check  input[type="checkbox"]:checked + label::after {
+	color: var(--color-2);
+	cursor: pointer;
+	left: 5px;
+	position: absolute;
+	top: 5px;
+	transform: scale(1);
+	transition: 0.3s linear all;
+}
+.bd-social-check  input[type="checkbox"] + label::after {
+	transform: scale(2);
+	opacity: 0;
+}
+.bd-social-check  input[type="checkbox"] + label::after {
+	content: "";
+	transform: scale(0);
+	transition: 0.3s linear all;
+}
+
+.bd-social-logo-img img {
+    height: 42px;
+    width: auto;
+}
+
+.bd-social-logo-img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------------
+        8   login  Area CSS area end
+-------------------------------------------------*/
+
 
 
